@@ -2,6 +2,7 @@
 
 hadoop fs -mkdir -p /apps/spark
 su mapr -c /tmp/create_table.sh
+sleep 5
 cp /home/mapr/maprts-docker-jars/spark-streaming-kafka-0-9_2.11-2.0.1-mapr-1611.jar /opt/mapr/spark/spark-2.0.1/jars/.
 service opentsdb start
 sh /opt/mapr/spark/spark-2.0.1/sbin/stop-master.sh
