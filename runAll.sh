@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sleep 300
+
 hadoop fs -mkdir -p /apps/spark
 
 cp /home/mapr/maprts-docker-jars/spark-streaming-kafka-0-9_2.11-2.0.1-mapr-1611.jar /opt/mapr/spark/spark-2.0.1/jars/.
